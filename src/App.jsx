@@ -1,5 +1,13 @@
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/home";
+import { Style } from "./pages/style";
+import { Sidebar } from "./common/sidebar";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-center">Hello world!</h1>
+    <div className="flex flex-row h-screen">
+      <Sidebar />
+      <Home />
+    </div>
   );
 }
